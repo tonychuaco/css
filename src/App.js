@@ -176,6 +176,49 @@ npm install gulp-stylelint --save-dev //install gulp-stylelint as dependency
 	<li>Controlgroup</li>
 </ul>
 </div>
+<h2>HTML</h2>
+<div>Form</div>
+<div>Semantics</div>
+<div>
+<h3>Graceful Degradation</h3>
+<ul>
+	<li>HTML5Shiv</li>
+</ul>
+</div>
+<h2>CSS</h2>
+<div>Grid Layout</div>
+<div>
+<h3>Responsive Design</h3>
+<ul>
+  <li>Viewport</li>
+  <li>@media</li>
+  <li>Grid</li>
+  <li>Images</li>
+  <li>Video</li>
+  <li>Font</li>
+</ul>
+</div>
+<h2>Bootstrap</h2>
+<div>Container</div>
+<div>Grid</div>
+<div>Color and Opacity</div>
+<div>Table</div>
+<div>Jumbotron</div>
+<h2>Sass</h2>
+<h6>Tools for CSS</h6>
+<ul>
+	<li>Sass Variable</li>
+	<li>Sass Nesting</li>
+	<li>@import</li>
+	<li>Sass Partials</li>
+	<li>@mixin</li>
+	<li>@include</li>
+	<li>@extend</li>
+</ul>
+  <h6>Sass Functions</h6>
+  <ul>
+    <li>String</li>
+  </ul>
 
       </div>
     );
