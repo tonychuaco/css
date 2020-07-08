@@ -130,6 +130,53 @@ Wraith
 /* Automation with Gulp */
 npm install gulp-stylelint --save-dev //install gulp-stylelint as dependency
 `}</pre>
+<div>
+<h2>Pages &amp; Navigation</h2>
+<ul>
+	<li>Pages</li>
+		<ul>
+			<li>Single Page</li>
+			<li>Multi-page Template</li>
+			<li><a href="https://api.jquerymobile.com/dialog/">Dialog Widget (deprecated)</a></li>
+		</ul>
+	<li>Navigation</li>
+	<li>Loader</li>
+	<li>Transitions</li>
+</ul>
+</div>
+<div>
+<h2>CSS Framework</h2>
+<ul>
+	<li>Theming</li>
+	<li>Buttons</li>
+	<li>Icons</li>
+	<li>Grids</li>
+	<li>Body and Bar Classes</li>
+</ul>
+</div>
+<div>
+<h2>Widgets</h2>
+<ul>
+	<li>Toolbar, Navbar</li>
+	<li>Tabs, Panel, Popup</li>
+	<li>Listview</li>
+	<li>Collapsible, Collapsible Set</li>
+	<li>Table Reflow, Table Column Toggle</li>
+	<li>Filterable</li>
+</ul>
+</div>
+<div>
+<h2>Form Widgets</h2>
+<ul>
+	<li>Checkboxes, Radio Buttons</li>
+	<li>Selectmenu, Custom Menu</li>
+	<li>Flipswitch</li>
+	<li>Slider, Rangeslider</li>
+	<li>Input Button</li>
+	<li>Controlgroup</li>
+</ul>
+</div>
+
       </div>
     );
   }
