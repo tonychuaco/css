@@ -33,102 +33,10 @@ Practical Approach to CSS Refactoring:
 6. Modularize
 7. Testing
 
-npm init //create package.json
-"name"
-"version"
-"description"
-"main": builds/development/index.html
-"scripts"
-"author"
-"license"
-
-npm install stylelint --save-dev //install stylelint as dependency
-
-npm install stylelint-config-recommended --save-dev //install stylelint config as dependency
-
-.stylelintrc //create file in directory
-{
-  "extends": "stylelint-config-recommended"
-}
-
-stylelint VS Code extension by Shinnosuke Wa...
-
-VS Code Preferences (Ctrl + ,) > Workspace Settings
-{
-  "css.validate": false,
-  "less.validate": false,
-  "scss.validate": false
-}
-
-Reload extension
-
-/* VS Code Default Settings*/
-VS Code > Tab Indent size 4 > Indent using Spaces
-VS Code > Spaces 2 > Convert Indent to spaces
-
-npm install prettier --save-dev //install prettier as dependency
-
-npm install prettier-stylelint --save-dev //install prettier-stylelint as dependency
-
-Update .stylelintrc
-{
-  "extends": [
-    "stylelint-config-standard",
-    "./node_modules/prettier-stylelint/config.js"
-  ]
-}
-
-prettier VS Code extension by Esben Petersen
-VS Code Preference > Workspace Settings
-Update Workspace Settings:
-{
-  "css.validate": false,
-  "less.validate": false,
-  "scss.validate": false,
-  "prettier.stylelintIntegration": true,
-  "[css]": {
-    "editor.formatOnSave": true
-  }
-}
-
-Reload extension
-
-npm install stylelint-config-rational-order --save-dev
-
-Update .stylelintrc
-{
-  "extends": [
-    "stylelint-config-standard",
-    "./node_modules/prettier-stylelint/config.js",
-    "stylelint-config-rational-order"
-  ]
-}
-
-/* Other */
-Ctrl + Shift + L //multi-select lines
-
-Ignore Warnings using comment block:
-/* stylelint-disable */
-  // your css code
-/* stylelint-enable */
-
-/* Google Font Best Practice */
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link> //google fonts
-
-/*Audit unused css with Chrome */
-Chrome Dev Tool > Coverage
-
-/*Quarantine unused css to separate unused.css*/
-
-/*Modularize CSS to separate css files*/
-
-/* Other Advanced Tools for refactoring*/
-Gemini
-Wraith
-
-/* Automation with Gulp */
-npm install gulp-stylelint --save-dev //install gulp-stylelint as dependency
+Styleguide:
+Naming convention: descriptive & functional .pure-grid-g
+Whitespacing
+SMACSS
 
 =================
 
@@ -153,21 +61,6 @@ p:after {
   content:"\201c";
 }
 
-Styleguide:
-Naming convention: descriptive & functional .pure-grid-g
-Whitespacing
-SMACSS
-
-# border box fix
-html {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-
 # Base
  * normalize.css
 
@@ -179,10 +72,6 @@ html {
  * display: inline | block | list-item | inline-block |
  * visibility: hidden
  *
- * screen width
- * 640px
- * 1024px
- * 1280px
  *
  * Fixed-layout: px
  * Flex-layout: %
@@ -250,116 +139,6 @@ br.clearLeft {
   content: "";
   display: table;
   clear: both;
-}
-
-/* -- MENU --
- *
- */
-
-
-/* -- MODULE --
- *
- */
-
-/* Horizontal Menu, Images, or P */
-.horizontalModule {
-  display: inline;
-}
-
-/* Stacking Modules */
-.stackingModule {
-  display: block;
-}
-
-/* Repeating Regions */
-
-.section {
-  width: 200px
-  margin-right: 10px;
-  float: left;
-}
-
-.section + .section {
-  margin-right: 10px;
-}
-
-/* Flex images */
-
-.banner1 {
-  width: 75%;
-  max-width: 100%;
-}
-
-.banner2 {
-  height: 500px;
-}
-
-/* text wrap */
-
-.textWrap {
-  margin: 0 1em 1em 0;
-  float: left;
-}
-
-.clearBoth {
-  clear: both;
-}
-
-.noWrap {
-  margin: 1em auto;
-  display: block;
-  float: none;
-}
-
-/* dropcaps */
-.dropcap p:first-of-type:first-letter {
-  margin: 0 5px 0 0;
-  float: left;
-  font-family: serif;
-  font-size: 4em;
-  line-height: .7;
-}
-
-/* Complex Example */
-.container {
-  overflow: hidden;
-}
-
-.image {
-  margin-right: 1em;
-  float: left;
-}
-
-.moreInfo {
-  margin: 0;
-  margin-right; 1em;
-  padding: 0 5px;
-  float: right;
-}
-
-.price {
-  margin: 0;
-  margin-top: -.3em;
-  float: right;
-}
-
-/* Height tech#1 */
-
-article {
-  background: rgb(125, 125, 125);
-  background: -moz-linear-gradient(left, rgb(237, 228, 214) 0%, rgb(237, 228, 214)62%, rgb(255, 255, 255)62%, rgb(255, 255, 255)65%, rgb(173, 169, 130)65%, rgb(173, 169, 130)100%);
-  background: -webkit-linear-gradient(left, rgb(237, 228, 214) 0%, rgb(237, 228, 214)62%, rgb(255, 255, 255)62%, rgb(255, 255, 255)65%, rgb(173, 169, 130)65%, rgb(173, 169, 130)100%);
-  background: linear-gradient(left, rgb(237, 228, 214) 0%, rgb(237, 228, 214)62%, rgb(255, 255, 255)62%, rgb(255, 255, 255)65%, rgb(173, 169, 130)65%, rgb(173, 169, 130)100%);
-}
-
-/* Height tech#2 */
-.column1, .column2, .column3 {
-  padding-bottom: 1000em;
-  margin-bottom: -1000em;
-}
-
-.column3 {
-  overflow: hidden;
 }
 
 /* -- Positioning --
