@@ -38,6 +38,13 @@ Naming convention: descriptive & functional .pure-grid-g
 Whitespacing
 SMACSS
 
+Responsive layout, visibility, graphics, and font size
+Retina display
+Sprites
+Multi-background
+Compound effects: bevel
+Zoom
+
 =================
 
 CSS Grid | CSS Flex | Retina | SVG | CSS Animation | CSS Shapes
@@ -61,9 +68,6 @@ p:after {
   content:"\201c";
 }
 
-# Base
- * normalize.css
-
 /* 
  * Box-model
  * Margin collapse (gutter)
@@ -83,168 +87,6 @@ p:after {
  * CSS Flexbox
  * .CSSGrid { display: grid; }
  */
-
-# Theme
-
-/* Typography
- * rem
- * vw, vh, v-min, v-max
- */
-
-
-/* Color */
-
-/* Retina Background */
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-  header {
-    background: url(image@2x.jpg);  
-  }
-}
-
-/* CSS Shapes */
-circle()
-ellipses()
-polygon( x-axis y-axis, x-axis y-axis, x-axis y-axis )
-inset()
-
-/* -- MISC --
- * Border
- * CSS Columns (NEW)
- * Effects (NEW)
- * Background
- * Transparency
- * Sprites
- */
-
-/* Multi-background */
-.module {
-  background: url(image1.jpg) repeat-x left bottom, url(image2.jpg) no-repeat -300px 0;
-}
-
-/* Gradient */
-.module {
-  background: linear-gradient(top, rgba(153,210,240,.8)0%, rgba(153,210,240,0)60%);
-}
-
-/* Transparency */
-<hsla()>
-opacity
-filter
-
-/* Effects */
-text-shadow
-box-shadow
-
-/* Bevel effect */
-
-.module:after {
-  content:"";
-  position: absolute;
-  z-index: -1;
-  left: 10px;
-  top: 10px;
-  bottom: 10px;
-  right: 10px;
-  background: grey;
-  border-top: 1px solid silver;
-  border-left: 1px solid silver;
-  border-bottom: 1px solid gold;
-  border-right: 1px solid gold;
-}
-
-/* Sprites */
-.menu {
-  background: url(icons.png)
-}
-
-.menu1 {
-  background-position: 5px 7px;
-}
-
-.menu2 {
-  background-position: 5px -93px;
-}
-
-.menu3 {
-  background-position: 5px 193px;
-}
-
-/* -- Breakpoints -- 
- * Mobile, Tablet, Desktop:
- * *Layout
- * *Images
- * *Menus
- * .menu { display: none; } no-repeat;
- * Typography
- */
-
-@media only screen and (min-width: 600px) and (max-width: 920px) {
-}
-
-@media only screen and (min-width: 600px) and (max-width: 599px) {
-}
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
-/* -- RESPONSIVE LAYOUT -- */
-Restrict zoom:
-user-scaleable
-minimum-scale
-maximum-scale
-
-/* Total box model = width & inherit */
-
-html {
-/*box-sizing: content-box;*/ /*browser default */
-  box-sizing: border-box;
-{
-
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-
-/* Responsive img width */
-img {
-  max-width: 100%;
-}
-
-/*common display values */
-display: inline;
-display: block;
-display: inline-block;
-display: flex;
-display: grid;
-
-/* Off-set Overlapping */
-position: static;
-position: relative; /*think Illustrator effect*/
-position: absolute; /*removes from doc flow*/
-position: fixed;
-position: sticky;
-
-/* text wrap */
-float: left;
-clear: left;
-
-### UNITS
-px | % | vw | vh | vmin | vmax | fr
-
-/* Grid */
-Grid Container
-Grid Line
-Grid Track
-Grid Cell
-Grid Area
-
-.container {
-  display: grid;
-  grid-template-columns: 200px 100px; /*other values: auto; repeat(2, 70px 1fr); */
-  grid-template-rows: 200px 50px 100px;
-  grid-gap: 20px 10px; /*gutter*/
-/*grid-row-gap:*/
-/*grid-column-gap:*/
-}
 
 `}</pre>
 <div>
