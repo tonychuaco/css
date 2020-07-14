@@ -37,8 +37,11 @@ Naming convention: descriptive & functional .pure-grid-g
 Whitespacing
 SMACSS
 
-CSS Frameworks
-
+CSS Concepts:
+Cascading | Inheritance | Specifity
+Selectors | Properties
+Box-model | Margin Collapse | Normal Document Flow | Float
+Fixed Layout px | Flexible Layout % | em Layout | Adaptive Layout @media
 Responsive layout, visibility, graphics, and font size
 Retina display
 Sprites
@@ -46,11 +49,7 @@ Multi-background
 Compound effects: bevel
 Zoom
 
-=================
-
-CSS Grid | CSS Flex | Retina | SVG | CSS Animation | CSS Shapes
-CSS Concepts: Cascading | Inheritance | Specifity
-Syntax: Selectors | Properties
+CSS Frameworks
 
 # Selectors
 Elements | .class | #id | body#id | .class1.class2 | section .example p a
@@ -68,26 +67,6 @@ p:before {
 p:after {
   content:"\201c";
 }
-
-/* 
- * Box-model
- * Margin collapse (gutter)
- * em-layout
- * Normal doc flow vs Float
- * display: inline | block | list-item | inline-block |
- * visibility: hidden
- *
- *
- * Fixed-layout: px
- * Flex-layout: %
- * min-width: px
- * max-width: px
- * Adaptive: @media
- * Responsive:
- * CSS Framework
- * CSS Flexbox
- * .CSSGrid { display: grid; }
- */
 
 `}
 </pre>
