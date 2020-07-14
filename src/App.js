@@ -4,7 +4,6 @@ import './App.css';
 export default class App extends Component {
   render() {
     return (
-      <div>
 <pre>{`
 Rational CSS Structure
 1. Normalize/reset
@@ -37,6 +36,8 @@ Styleguide:
 Naming convention: descriptive & functional .pure-grid-g
 Whitespacing
 SMACSS
+
+CSS Frameworks
 
 Responsive layout, visibility, graphics, and font size
 Retina display
@@ -88,98 +89,8 @@ p:after {
  * .CSSGrid { display: grid; }
  */
 
-`}</pre>
-<div>
-<h2>Pages &amp; Navigation</h2>
-<ul>
-	<li>Pages</li>
-		<ul>
-			<li>Single Page</li>
-			<li>Multi-page Template</li>
-			<li><a href="https://api.jquerymobile.com/dialog/">Dialog Widget (deprecated)</a></li>
-		</ul>
-	<li>Navigation</li>
-	<li>Loader</li>
-	<li>Transitions</li>
-</ul>
-</div>
-<div>
-<h2>CSS Framework</h2>
-<ul>
-	<li>Theming</li>
-	<li>Buttons</li>
-	<li>Icons</li>
-	<li>Grids</li>
-	<li>Body and Bar Classes</li>
-</ul>
-</div>
-<div>
-<h2>Widgets</h2>
-<ul>
-	<li>Toolbar, Navbar</li>
-	<li>Tabs, Panel, Popup</li>
-	<li>Listview</li>
-	<li>Collapsible, Collapsible Set</li>
-	<li>Table Reflow, Table Column Toggle</li>
-	<li>Filterable</li>
-</ul>
-</div>
-<div>
-<h2>Form Widgets</h2>
-<ul>
-	<li>Checkboxes, Radio Buttons</li>
-	<li>Selectmenu, Custom Menu</li>
-	<li>Flipswitch</li>
-	<li>Slider, Rangeslider</li>
-	<li>Input Button</li>
-	<li>Controlgroup</li>
-</ul>
-</div>
-<h2>HTML</h2>
-<div>Form</div>
-<div>Semantics</div>
-<div>
-<h3>Graceful Degradation</h3>
-<ul>
-	<li>HTML5Shiv</li>
-</ul>
-</div>
-<h2>CSS</h2>
-<div>Grid Layout</div>
-<div>
-<h3>Responsive Design</h3>
-<ul>
-  <li>Viewport</li>
-  <li>@media</li>
-  <li>Grid</li>
-  <li>Images</li>
-  <li>Video</li>
-  <li>Font</li>
-</ul>
-</div>
-<h2>Bootstrap</h2>
-<div>Container</div>
-<div>Grid</div>
-<div>Color and Opacity</div>
-<div>Table</div>
-<div>Jumbotron</div>
-<h2>Sass</h2>
-<h6>Tools for CSS</h6>
-<ul>
-	<li>Sass Variable</li>
-	<li>Sass Nesting</li>
-	<li>@import</li>
-	<li>Sass Partials</li>
-	<li>@mixin</li>
-	<li>@include</li>
-	<li>@extend</li>
-</ul>
-  <h6>Sass Functions</h6>
-  <ul>
-    <li>String</li>
-  </ul>
-
-      </div>
+`}
+</pre>
     );
   }
 }
